@@ -1,5 +1,5 @@
 clear
-use "C:\Users\ander\OneDrive - FIOCRUZ\Boletim Epidemiológico DTNs (MS) 2025\Bancos\Bancos_casos_ajustados\DTN_2010_2023_Geral.dta", clear
+use "C:\Users\ander\OneDrive - FIOCRUZ\Boletim EpidemiolÃ³gico DTNs (MS) 2025\Bancos\Bancos_casos_ajustados\DTN_2010_2023_Geral.dta", clear
 
 *gen obt=1 if lista==23 & sexo==1
 
@@ -105,7 +105,7 @@ drop pop2
 
 collapse (sum) han pop, by(nu_ano cd_brasil agegr sexo raca)
 
-*condições para etinia e sexo
+*condiÃ§Ãµes para etinia e sexo
 keep if sexo==0
 
 keep if raca==5
