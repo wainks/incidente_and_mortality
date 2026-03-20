@@ -79,7 +79,7 @@ gen pop = int(pop2)
 
 drop pop2
 
-*condições para etinia e sexo
+*condiÃ§Ãµes para etinia e sexo
 
 keep if sexo==0
 
